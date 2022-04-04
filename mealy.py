@@ -30,7 +30,8 @@ for _ in range(int(m)):
     add_tranzitie(start, end, char, msg)
 
 init = f.readline().strip()
-fin = set(f.readline().split())
+_, *fin = f.readline().split()
+fin = set(fin)
 nr_cuv = f.readline().strip()
 
 for _ in range(int(nr_cuv)):
